@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form-set</title>
+</head>
+<body>
+	<form method="POST" action="{% url 'view1' %}">
+		{% csrf_token %} 
+		{{ form.as_p }}
+
+		<button type="submit">Submit</button>
+
+	</form>
+</body>
+</html>
